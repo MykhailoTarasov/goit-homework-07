@@ -278,9 +278,12 @@ img {
   color: var(--btn-pressed);
 }
 
-
 .mobile-item {
   margin-bottom: 40px;
+}
+
+.mobile-item:last-child {
+  margin-bottom: 48px;
 }
 
 .mobile-link {
@@ -317,7 +320,6 @@ img {
 .mobile-social-links {
   list-style: none;
   display: flex;
-  margin-top: 16px;
 }
 
 .mobile-social-link {
@@ -331,6 +333,14 @@ img {
   height: 40px;
 
   transition: background-color var(--transition);
+}
+
+.mobile-social-item {
+  margin-right: 56px;
+}
+
+.mobile-social-item:last-child {
+  margin-right: 0;
 }
 
 .mobile-social-link:focus {
@@ -422,6 +432,7 @@ img {
     margin-top: 0;
   }
 }
+
 @media (max-width: 1199px) {
   .main-button {
     margin-top: 0;
@@ -445,10 +456,24 @@ img {
   padding-right: 15px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+}
+
 .descr {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-secondary);
+}
+
+@media (max-width: 767px) {
+  .descr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .section-title {
@@ -458,20 +483,40 @@ img {
   margin-bottom: 72px;
 }
 
-/* section features */
+/* Section2 Features==========================================================================
+=========================================================================================== */
 
 .features-main {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+@media (max-width: 767px) {
+  .features-main {
+    padding: 96px 16px;
+  }
+}
+
 .features {
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .features {
+    display: block;
+  }
 }
 
 .features .item {
   margin-right: 24px;
   flex-basis: calc((1128px - 3 * 24px) / 4);
+}
+
+@media (max-width: 767px) {
+  .features .item {
+    margin-right: 0;
+    margin-bottom: 72px;
+  }
 }
 
 .features .item:last-child {
@@ -486,35 +531,16 @@ img {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .features-div {
+    display: none;
+  }
+}
+
 .features-icon {
   width: 64px;
   height: 64px;
 }
-
-/* .features .item::before {
-  background-color: var(--btn-background);
-  display: block;
-  content: '';
-  height: 112px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* .features .item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-} */
-
-/* .features .item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg)
-}
-
-.features .item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg)
-}
-
-.features .item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg)
-} */
 
 .features-list {
   font-size: 20px;
@@ -526,11 +552,31 @@ img {
   margin-top: 8px;
 }
 
-/* works */
+@media (max-width: 767px) {
+  .features-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
+
+/* WORKS=================================================================================
+=================================================================================== */
 
 .works-main {
   text-align: center;
   padding-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .works-main {
+    display: none;
+  }
 }
 
 .works {
@@ -545,7 +591,8 @@ img {
   margin-right: 0;
 }
 
-/* team */
+/* TEAM======================================================================================
+======================================================================================== */
 
 .employees {
   text-align: center;
@@ -625,7 +672,8 @@ img {
   height: 16px;
 }
 
-/* section5 customers */
+/* Section5 Customers========================================================================
+======================================================================== */
 
 .customers-main {
   padding-top: 130px;
@@ -673,7 +721,8 @@ img {
   fill: currentColor;
 }
 
-/* .footer */
+/* Footer===========================================================================
+============================================================================== */
 
 .footer-container {
   display: flex;
