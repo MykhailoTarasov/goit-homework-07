@@ -375,9 +375,9 @@ img {
     url(../images/people-office\ 1.jpg);
 }
 
-@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2),
-  screen and (max-width: 1199px) and (min-resolution: 192dpi),
-  screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -564,7 +564,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-features {
-    padding: 0 16px
+    padding: 0 16px;
     width: 768px;
     margin-left: auto;
     margin-right: auto;
