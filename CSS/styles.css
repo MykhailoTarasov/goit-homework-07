@@ -734,6 +734,13 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .employees {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-employees {
     padding: 96px 92px 104px 92px;
   }
