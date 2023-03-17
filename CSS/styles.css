@@ -404,7 +404,7 @@ img {
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(
+    background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -428,7 +428,7 @@ img {
   screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(
+    background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
