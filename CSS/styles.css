@@ -426,6 +426,8 @@ img {
   }
 }
 
+
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     padding-top: 112px;
