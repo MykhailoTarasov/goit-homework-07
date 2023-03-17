@@ -233,7 +233,7 @@ img {
 
   width: 100%;
   background-color: var(--white);
-  height: 796px;
+  height: 100%;
 
   padding-top: 80px;
   padding-left: 40px;
@@ -269,7 +269,7 @@ img {
 
   list-style: none;
   text-decoration: none;
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-site-nav .mobile-link {
@@ -281,11 +281,19 @@ img {
   color: var(--btn-pressed);
 }
 
-.mobile-item {
+.mobile-site-nav .mobile-item {
   margin-bottom: 40px;
 }
 
-.mobile-item:last-child {
+.mobile-site-nav .mobile-item:last-child {
+  margin-bottom: 284px;
+}
+
+.mobile-contact-nav .mobile-item {
+  margin-bottom: 40px;
+}
+
+.mobile-contact-nav .mobile-item:last-child {
   margin-bottom: 48px;
 }
 
@@ -372,7 +380,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -384,7 +392,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1@2x.jpg);
+      url(../images/people-office@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -411,7 +419,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Mobile@2x.jpg);
+      url(../images/mobile@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -435,7 +443,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Tablet@2x.jpg);
+      url(../images/tablet@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -957,7 +965,6 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    
   }
 }
 
@@ -986,7 +993,6 @@ img {
 .footer-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1008,7 +1014,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 16px;
-  max-width: 264px;
+  width: 264px;
 }
 
 .footer-social {
@@ -1033,6 +1039,17 @@ img {
 .footer-social-team {
   display: flex;
   margin-top: 16px;
+}
+
+.footer-social-team .social-item {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-team .social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social-link {
